@@ -1,0 +1,35 @@
+/* Creating the animation with name `animate` */
+@keyframes animate {
+  0% {
+    background-color: seagreen;
+  }
+  25% {
+    background-color: tomato;
+    transform: scale(1.5, 1.5);
+  }
+  50% {
+    background-color: rgb(27, 115, 131);
+    transform: scale(1, 1);
+  }
+  75% {
+    background-color: yellowgreen;
+    transform: rotate(45deg);
+  }
+  100% {
+    background-color: purple;
+    border-radius: 50%;
+  }
+}
+
+#box {
+  width: 500px;
+  height: 500px;
+  margin: 100px auto;
+  /* animation-name: animate;
+  animation-duration: 1s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; */
+
+  animation: animate 5s 0s infinite ease-in;
+}
